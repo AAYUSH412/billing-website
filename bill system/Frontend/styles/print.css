@@ -1,0 +1,54 @@
+@media print {
+    @page {
+      size: auto;
+      margin: 1.6cm;
+    }
+  
+    body {
+      margin: 0;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+      visibility: hidden;
+    }
+
+    #printable-content { 
+
+        visibility: visible;
+
+    }
+  
+    .print\:hidden {
+      display: none !important;
+    }
+  
+    /* Ensure white background */
+    .bg-white {
+      background-color: white !important;
+    }
+  
+    /* Remove shadows and borders for better printing */
+    .shadow-xl {
+      box-shadow: none !important;
+    }
+  
+    /* Ensure black text */
+    * {
+      color: black !important;
+    }
+  
+    /* Table styles */
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+  
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+  
+    /* Break pages appropriately */
+    .page-break {
+      page-break-after: always;
+    }
+  }

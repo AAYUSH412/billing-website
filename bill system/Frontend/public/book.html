@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Invoice - Paucek and Lage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .invoice-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .invoice-details {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .invoice-to, .invoice-from {
+            width: 45%;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        .totals {
+            text-align: right;
+        }
+        .contact-info {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="invoice-header">
+        <h1>INVOICE</h1>
+        <h2>Paucek and Lage</h2>
+    </div>
+
+    <div class="invoice-details">
+        <div class="invoice-to">
+            <h3>Invoice to:</h3>
+            <p>JULIANA SILVA</p>
+            <p>hello@reallygreatsite.com</p>
+            <p>123 Anywhere St., Any City, ST 12345</p>
+            <p>+123-456-7890</p>
+        </div>
+        <div class="invoice-from">
+            <p><strong>Invoice No:</strong> 0000-123-456</p>
+            <p><strong>Date:</strong> November 12, 2021</p>
+        </div>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>SERVICE</th>
+                <th>QTY</th>
+                <th>PRICE</th>
+                <th>TOTAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Storybook</td>
+                <td>2</td>
+                <td>$120</td>
+                <td>$240</td>
+            </tr>
+            <tr>
+                <td>Magazine</td>
+                <td>4</td>
+                <td>$100</td>
+                <td>$400</td>
+            </tr>
+            <tr>
+                <td>Comic</td>
+                <td>3</td>
+                <td>$130</td>
+                <td>$390</td>
+            </tr>
+            <tr>
+                <td>Novel</td>
+                <td>2</td>
+                <td>$120</td>
+                <td>$240</td>
+            </tr>
+            <tr>
+                <td>Notebooks</td>
+                <td>2</td>
+                <td>$120</td>
+                <td>$240</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="totals">
+        <p><strong>Sub-total:</strong> $1,735</p>
+        <p><strong>Tax:</strong> $55</p>
+        <p><strong>Total:</strong> $1,680</p>
+    </div>
+
+    <div class="contact-info">
+        <p><strong>Payment Method:</strong></p>
+        <p>Bank Name: Francisco Andrade</p>
+        <p>Account No: 1234567890</p>
+        <p>+123-456-7890 | hello@reallygreatsite.com</p>
+        <p>123 Anywhere St., Any City, ST 12345</p>
+        <p>Administrator</p>
+        <p>Thank you for purchase!</p>
+    </div>
+</body>
+</html>
